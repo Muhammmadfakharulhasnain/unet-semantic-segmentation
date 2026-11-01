@@ -1,0 +1,17 @@
+name: month5-unet
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - numpy
+  - pandas
+  - matplotlib
+  - pillow
+  - pyyaml
+  - tqdm
+  - jupyter
+  - ipykernel
+  - pytest

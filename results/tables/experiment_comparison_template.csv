@@ -1,0 +1,1 @@
+experiment,augmentation,loss,seed,best_epoch,training_seconds,trainable_parameters,test_pixel_accuracy,test_mean_iou,test_mean_dice,test_macro_precision,test_macro_recall,test_mean_iou_pet_and_boundary

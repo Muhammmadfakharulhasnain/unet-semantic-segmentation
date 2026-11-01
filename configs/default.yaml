@@ -1,0 +1,44 @@
+project:
+  name: month5_unet_segmentation
+  seed: 42
+  output_dir: .
+
+data:
+  root: data
+  image_size: 128
+  batch_size: 4
+  num_workers: 0
+  train_fraction: 0.85
+  val_fraction: 0.15
+  test_fraction: 0.00
+
+model:
+  in_channels: 3
+  num_classes: 3
+  base_channels: 8
+
+training:
+  epochs: 5
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 2
+  device: auto
+  amp: false
+
+experiments:
+  - name: baseline_ce
+    augmentation: false
+    loss: cross_entropy
+    seed: 42
+  - name: augmented_ce
+    augmentation: true
+    loss: cross_entropy
+    seed: 42
+  - name: augmented_dice
+    augmentation: true
+    loss: dice
+    seed: 42
+  - name: augmented_combined
+    augmentation: true
+    loss: combined
+    seed: 42

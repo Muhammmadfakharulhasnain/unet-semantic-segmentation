@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-pytorch/
+data/
+checkpoints/
+.ipynb_checkpoints/
+.pytest_cache/
+results/tables/*_history.csv
+results/tables/experiment_comparison.csv
+results/tables/experiment_comparison.json
+results/figures/*.png
+
